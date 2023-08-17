@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- jQueryプラグイン「slickの「CSS」読み込み-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQueryプラグイン「slickの「CSS」読み込み-->
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id ="header">
+        <h1 class ="site-title">
+          <img src="logo.svg" alt="ロゴ" width="1" height="50">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+        <div id ="mainimage">
+        <picture>
+            <source media="(max-width: 400px)" srcset="mainvisual-pc2.jpeg">
+            <img src="mainvisual-pc.jpeg" alt="イメージ">
+        </picture>
+    </div>
+
+  
+ 
+
+<section id="about" class ="wrapper">
+    <h2 class="sec-title">About</h2>
+    <div id="about-Hide">
+    <dl>
+        <dt>住所</dt>
+        <dd>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</dd>
+        <dt>tel</dt>
+        <dd>000-0000-0000</dd>
+        <dt>url</dt>
+        <dd>www.xxxxxx.jp</dd>
+        <dt>mail</dt>
+        <dd>xxx@xxxxxx.jp</dd>
+    </dl>
+</div>
+</section>
+
+
+<section id="works" class="wrapper">
+    <h2 class="sec-title">Works</h2>
+    <div id="Works-Hide">
+    <ul>
+      <li><img src="works1.jpeg" alt="テキスト"></li>
+      <li><img src="works2.jpeg" alt="テキスト"></li>
+      <li><img src="works3.jpeg" alt="テキスト"></li>
+      <li><img src="works4.jpeg" alt="テキスト"></li>
+      <li><img src="works5.jpeg" alt="テキスト"></li>
+      <li><img src="works6.jpeg" alt=""></li>
+    </ul>
+    </div>
+  </section>
+
+  <section id="news" class="wrapper">
+    <h2 class="sec-title">News</h2>
+    <div id="news-Hide">
+    <dl >
+      <dt>2020.XX.XX</dt>
+      <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+      <dt>2020.XX.XX</dt>
+      <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+      <dt>2019.XX.XX</dt>
+      <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+      <dt>2019.XX.XX</dt>
+      <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+      <dt>2019.XX.XX</dt>
+      <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+    </dl>
+    </div>
+  </section>
+
+  <section id="contact" class="wrapper">
+    <h2 class="sec-title">Contact</h2>
+    <div id="contact-Hide">
+    <form action="#" method="post" id="form-contact">
+      <dl>
+        <dt><label for="name">NAME</label></dt>
+        <dd><input type="text" id="name" name="your-name"></dd>
+        <dt><label for="email">E-mail</label></dt>
+        <dd><input type="email" id="email" name="your-email"></dd>
+        <dt><label for="message">MESSAGE</label></dt>
+        <dd><textarea id="message" name="your-message"></textarea></dd>
+      </dl>
+      <div class="button"><input type="submit" value="送信"></div>
+    </form>
+    </div>
+  </section>
+</main>
+<!-- jQueryの読み込み-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- jQueryプラグイン「slickの読み込み-->
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+<script src="slider.js"></script>
+</body>
+</html>

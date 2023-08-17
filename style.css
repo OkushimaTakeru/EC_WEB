@@ -1,0 +1,318 @@
+
+#header{
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+#header ul{
+    display: flex;
+    padding: 10px 0;
+}
+
+#header li{
+    list-style: none;
+    margin-left:30px;
+}
+
+#header li a {
+  color: #24292e;
+  text-decoration: none;
+}
+
+/* ロゴアイコン */
+.site-title img{
+    width: 100%;
+}
+
+/* TOP画像 */
+#mainimage img {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+}
+
+/* slide画像横並び*/
+.slider-container {
+  display: flex;
+}
+.image-slider{
+  margin: 10px 5px;
+}
+.image-slider img {
+  height: 300px;
+}
+.slider-item {
+  flex-basis: 100%;
+}
+
+/* slide画像右*/
+
+
+
+/* ロゴ  My Work*/
+h1{
+  transform: skew(-15deg); 
+}
+
+/* h2 タイトルレイアウト「About　Works　News　Contact」*/
+h2 {
+  padding: 1rem 3rem;
+  transform: skew(-15deg); 
+  color: #fff;
+  background-image: linear-gradient(to right, #dfe0f1 0%, #25302f 100%);
+  transition:  1s 
+}
+
+h2:hover {
+  box-shadow: 15px 13px 5px rgb(0 0 0 / 91%);
+  padding: 1rem 3rem;
+  color: #fff;
+  transform: translateY(-0.1875em);
+  transition:  1s 
+}
+
+/* about 初期非表示*/
+#about-Hide{
+  display: none;
+}
+/* about */
+#about dl {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto;
+
+  }
+  #aboutv dt {
+  flex-basis: 15%;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+  }
+  #about dd {
+  flex-basis: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  }
+
+
+
+/* Works 初期非表示*/
+#Works-Hide{
+  display: none;
+}
+
+/* Works */
+#works ul {
+  display: flex;                   /* 横並びに配置します */
+  justify-content: space-between;  /* 両端で揃えます */
+  flex-wrap: wrap;                 /* 折り返します */
+  margin-bottom: 50px;
+
+}
+#works li {
+  width: 31%;
+  margin-bottom: 23px;
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* Contact */
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+}
+
+#contact dd input, #contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+#contact dt {
+  width: 15%;
+}
+
+/* 共通 */
+  .wrapper {
+  max-width: 1300px;
+  margin: 0 auto 130px auto;
+  padding: 0 4%;
+}
+
+/* 共通 「About」「Works」『Contact』*/
+.sec-title{
+font-size: 1.5rem;
+text-align: center;
+margin: 40px;
+}
+
+/* News 初期非表示*/
+#news-Hide{
+  display: none;
+}
+
+/* News */
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+
+}
+
+#news dt {
+  
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+#news dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+
+
+/* contact 初期非表示*/
+#contact-Hide{
+  display: none;
+}
+
+/* contact */
+#contact .button {
+  text-align: center;
+}
+
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width:600px){
+
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  #about dl {
+    flex-flow: column;
+    }
+
+   /* Works */
+   #works ul {
+    flex-direction: column;  /* レスポンシブ時は縦積みにします */   
+   }
+    #works li { 
+     width: 100%;             /* 画面の横幅いっぱいに表示します */
+    }
+
+
+/* Contact */
+    #contact dl {
+      flex-direction: column;  /* レスポンシブ時は縦積みにします */
+    }
+    #contact dt {
+      width: 100%;
+    }
+    #contact dd {
+      width: 100%;
+    }
+  
+    /* news */
+    #news dt {
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 0;
+  }
+    #news dd {
+      width: 100%;
+      padding-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  #about dl {
+    flex-flow: column;
+    }
+
+   /* Works */
+   #works ul {
+    flex-direction: column;  /* レスポンシブ時は縦積みにします */   
+   }
+    #works li { 
+     width: 100%;             /* 画面の横幅いっぱいに表示します */
+    }
+
+
+/* Contact */
+    #contact dl {
+      flex-direction: column;  /* レスポンシブ時は縦積みにします */
+    }
+    #contact dt {
+      width: 100%;
+    }
+    #contact dd {
+      width: 100%;
+    }
+  
+    /* news */
+    #news dt {
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 0;
+  }
+    #news dd {
+      width: 100%;
+      padding-top: 0;
+  }
+}
